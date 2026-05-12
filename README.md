@@ -111,8 +111,8 @@ Body JSON chứa:
 cartItems, totalAmount, date, address, paymentMethod, status
 status hiện đang set mặc định là 'warehouse'.
 
-Orders (admin)
-7) GET (all users)
+### Orders (admin)
+7)  GET (all users)
 GET ${DATABASE_URL}/orders.json?auth=${token}
 Lấy toàn bộ orders của tất cả user.
 Code duyệt: for (const userId in resData) for (const orderId in resData[userId]) ...
@@ -127,7 +127,7 @@ Body JSON: { status: newStatus }
 <img width="1920" height="1080" alt="2026-05-12 21_55_50-" src="https://github.com/user-attachments/assets/d46425bc-0061-4c96-ad79-455eb0040392" />
 
 
-Ảnh Sản Phẩm trên màn hình
+## Ảnh Sản Phẩm trên màn hình
 
 <img width="1320" height="2868" alt="z7816558072959_bfa45af2fe6462ff95c0cb417d599fe3" src="https://github.com/user-attachments/assets/fd8a3f16-78fd-4514-ab98-0868c7138f15" />
 <img width="1320" height="2868" alt="z7816558641254_64dddde670b99c9a8cd3ef537f86678f" src="https://github.com/user-attachments/assets/acae8461-3b03-4fc4-afed-65a305badfa3" />
