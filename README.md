@@ -72,11 +72,11 @@ Cho nên project không dùng Swagger/OpenAPI; “Remote API” mà
 app gọi là Firebase Realtime Database REST API (theo pattern /products.json, /orders/...json, /profiles.json),
 ví dụ trong store/actions/orders.js:
 
-GET ${DATABASE_URL}/orders/${userId}.json?auth=${token}
-POST ${DATABASE_URL}/orders/${userId}.json?auth=${token}
-DELETE ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token}
-GET ${DATABASE_URL}/orders.json?auth=${token} (admin)
-PATCH ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token} (admin)
+### GET ${DATABASE_URL}/orders/${userId}.json?auth=${token}
+### POST ${DATABASE_URL}/orders/${userId}.json?auth=${token}
+### DELETE ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token}
+### GET ${DATABASE_URL}/orders.json?auth=${token} (admin)
+### PATCH ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token} (admin)
 
 Kết luận: Frontend API base URL = DATABASE_URL (Firebase Realtime Database base URL)
 
