@@ -7,8 +7,8 @@
 
 | STT | Họ và Tên | Mã sinh viên (MSSV) | Phân công nhiệm vụ |
 |:---:|---|---|---|
-| 1 | **Triệu Bảo Khanh** | `23810310013` | Thiết kế UI/UX, lập trình giao diện Frontend (Trang chủ, Chi tiết sản phẩm, Giỏ hàng), cấu hình React Navigation. |
-| 2 | **Nguyễn Đức Quân** | `23810310026` | Tích hợp Firebase (Auth & Realtime Database), quản lý State bằng Redux (Auth, Cart, Orders), xử lý luồng đặt hàng. |
+| 1 | **Nguyễn Đức Quân** | `23810310026` | Thiết kế UI/UX, lập trình giao diện Frontend (Trang chủ, Chi tiết sản phẩm, Giỏ hàng), cấu hình React Navigation. |
+| 2 | **Triệu Bảo Khanh** | `23810310013` | Tích hợp Firebase (Auth & Realtime Database), quản lý State bằng Redux (Auth, Cart, Orders), xử lý luồng đặt hàng. |
 | 3 | **Vũ Đức Quang Huy** | `23810310036` | Xây dựng màn hình Admin (Quản lý sản phẩm, đơn hàng), tối ưu hóa hiệu năng FlatList, viết tài liệu và kiểm thử hệ thống. |
 
 ## Công nghệ sử dụng
