@@ -61,3 +61,21 @@
 *Bạn có thể tự đăng ký một tài khoản mới trực tiếp trên app để vào thẳng hệ thống, hoặc sử dụng tài khoản có sẵn sau:*
 - **Email:** `khanh@gmail.com`
 - **Mật khẩu:** `1234567`
+
+#Ảnh chụp từ màn hình
+<img width="1320" height="2868" alt="z7816558072959_bfa45af2fe6462ff95c0cb417d599fe3" src="https://github.com/user-attachments/assets/fd8a3f16-78fd-4514-ab98-0868c7138f15" />
+<img width="1320" height="2868" alt="z7816558641254_64dddde670b99c9a8cd3ef537f86678f" src="https://github.com/user-attachments/assets/acae8461-3b03-4fc4-afed-65a305badfa3" />
+<img width="1320" height="2868" alt="z7816558931187_404eed87f13cc0a89ab788c29e10232b" src="https://github.com/user-attachments/assets/91e7f88b-00f6-44e5-b863-c3e21afadac9" />
+<img width="1320" height="2868" alt="z7818169881605_ca2a56e770e85b4b405186fab2c7e95c" src="https://github.com/user-attachments/assets/fcbb3395-cf29-40f1-8233-c3ce0dec71ba" />
+<img width="1320" height="2868" alt="z7818180977207_21c33bb4af5ce6fc1be2f67150a85325" src="https://github.com/user-attachments/assets/d3f171fa-f91b-4c14-bd6f-eeedbcdca9d5" />
+<img width="1320" height="2868" alt="z7818188094444_c0a3760faa1d93425d1629f14923aab0" src="https://github.com/user-attachments/assets/e12da223-d073-4e27-8a19-5e2c2c09844c" />
+<img width="1320" height="2868" alt="z7818208378231_0c4b4eccb2a7aa4e8da6de6e28178328" src="https://github.com/user-attachments/assets/72f7c383-e624-473d-924b-ae77517fcd7d" />
+<img width="1320" height="2868" alt="z7818205566522_ccf4cbf1773dd52afff7e7f7cc99b636" src="https://github.com/user-attachments/assets/73c6bd29-073f-4e18-8779-97312c1361e1" />
+
+
+
+
+
+
+
+
