@@ -82,44 +82,35 @@ GET ${DATABASE_URL}/orders/${userId}.json?auth=${token} (nếu action có load o
 3) Profiles
 GET ${DATABASE_URL}/profiles.json?auth=${token} (từ ví dụ trong ON_THI_VAN_DAP_CODE.md và thường được dùng trong app)
 hoặc các biến thể theo path profile tuỳ implement (cần đối chiếu thêm trong store/actions/profile.js)
-4) QR VietQR (không phải “Remote API” cho data DB, nhưng là request HTTP ra ngoài)
-URL gọi ảnh/QR: https://img.vietqr.io/image/...
-Ghi chú:
-Tất cả request tới Firebase Real time database đều theo format:
-https://<database>.firebaseio.com/<path>.json?auth=<token>
 
-Từ file store/actions/orders.js, các endpoint (method + path) mà app dùng cho Orders:
-
-Orders (user-scoped)
-5) DELETE
+4) DELETE
 DELETE ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token}
-
 Xóa đơn hàng theo userId + orderId.
-6) GET
-GET ${DATABASE_URL}/orders/${userId}.json?auth=${token}
 
+5) GET
+GET ${DATABASE_URL}/orders/${userId}.json?auth=${token}
 Lấy toàn bộ orders của user hiện tại.
 Code duyệt resData theo key và map thành Order(...).
-7)POST
-POST ${DATABASE_URL}/orders/${userId}.json?auth=${token}
 
+6)POST
+POST ${DATABASE_URL}/orders/${userId}.json?auth=${token}
 Tạo đơn hàng mới.
 Body JSON chứa:
 cartItems, totalAmount, date, address, paymentMethod, status
 status hiện đang set mặc định là 'warehouse'.
 
 Orders (admin)
-8) GET (all users)
+7) GET (all users)
 GET ${DATABASE_URL}/orders.json?auth=${token}
-
 Lấy toàn bộ orders của tất cả user.
 Code duyệt: for (const userId in resData) for (const orderId in resData[userId]) ...
 Sau đó sort theo date giảm dần.
 
-9) PATCH (admin: update status)
+8) PATCH (admin: update status)
 PATCH ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token}
-
 Body JSON: { status: newStatus }
+
+
 Ảnh Sản Phẩm trên màn hình
 
 <img width="1320" height="2868" alt="z7816558072959_bfa45af2fe6462ff95c0cb417d599fe3" src="https://github.com/user-attachments/assets/fd8a3f16-78fd-4514-ab98-0868c7138f15" />
