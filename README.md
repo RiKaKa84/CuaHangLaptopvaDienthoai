@@ -68,17 +68,29 @@ Base URL thực tế nằm ở biến DATABASE_URL trong config.js:
 DATABASE_URL được import từ @env
 Trong thực tế khi gọi API, app dùng:
 fetch(${config.DATABASE_URL}/.json?auth=${token})
+Cho nên project không dùng Swagger/OpenAPI; “Remote API” mà 
+app gọi là Firebase Realtime Database REST API (theo pattern /products.json, /orders/...json, /profiles.json),
+ví dụ trong store/actions/orders.js:
+
+GET ${DATABASE_URL}/orders/${userId}.json?auth=${token}
+POST ${DATABASE_URL}/orders/${userId}.json?auth=${token}
+DELETE ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token}
+GET ${DATABASE_URL}/orders.json?auth=${token} (admin)
+PATCH ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token} (admin)
 
 Kết luận: Frontend API base URL = DATABASE_URL (Firebase Realtime Database base URL)
 
 - Toàn bộ API đã sử dụng trong project
 1) Products
 GET ${DATABASE_URL}/products.json?auth=${token}
-GET ${DATABASE_URL}/products/${id}.json?auth=${token} (nếu có trong file gọi chi tiết sản phẩm—cần kiểm tra thêm ở store/actions/products.js)
+GET ${DATABASE_URL}/products/${id}.json?auth=${token}
+(nếu có trong file gọi chi tiết sản phẩm—cần kiểm tra thêm ở store/actions/products.js)
+
 2) Orders
 POST ${DATABASE_URL}/orders/${userId}.json?auth=${token}
 (thường body là object order)
-GET ${DATABASE_URL}/orders/${userId}.json?auth=${token} (nếu action có load order—cần kiểm tra thêm trong store/actions/orders.js)
+GET ${DATABASE_URL}/orders/${userId}.json?auth=${token}
+(nếu action có load order—cần kiểm tra thêm trong store/actions/orders.js)
 3) Profiles
 GET ${DATABASE_URL}/profiles.json?auth=${token} (từ ví dụ trong ON_THI_VAN_DAP_CODE.md và thường được dùng trong app)
 hoặc các biến thể theo path profile tuỳ implement (cần đối chiếu thêm trong store/actions/profile.js)
