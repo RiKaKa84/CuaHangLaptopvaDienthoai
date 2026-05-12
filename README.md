@@ -122,6 +122,10 @@ Sau đó sort theo date giảm dần.
 PATCH ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token}
 Body JSON: { status: newStatus }
 
+Toàn bộ dữ liệu thêm sản phẩm và người dùng đều ở trong Firebase Realtime Data của Google:
+<img width="1916" height="1080" alt="2026-05-12 21_55_26-" src="https://github.com/user-attachments/assets/360592ff-df06-44d0-864c-604c15b0d729" />
+<img width="1920" height="1080" alt="2026-05-12 21_55_50-" src="https://github.com/user-attachments/assets/d46425bc-0061-4c96-ad79-455eb0040392" />
+
 
 Ảnh Sản Phẩm trên màn hình
 
