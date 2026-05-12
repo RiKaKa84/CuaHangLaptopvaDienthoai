@@ -62,11 +62,11 @@
 - **Email:** `khanh@gmail.com`
 - **Mật khẩu:** `1234567`
 
-Project sử dụng Firebase Realtime Database theo kiểu REST endpoint của Firebase (dùng fetch tới URL dạng .../products.json?auth=...).
+## Project sử dụng Firebase Realtime Database theo kiểu REST endpoint của Firebase (dùng fetch tới URL dạng .../products.json?auth=...).
 Frontend API base URL (URL gốc gọi API từ app)
 Base URL thực tế nằm ở biến DATABASE_URL trong config.js:
 DATABASE_URL được import từ @env
-Trong thực tế khi gọi API, app dùng:
+### Trong thực tế khi gọi API, app dùng:
 fetch(${config.DATABASE_URL}/.json?auth=${token})
 Cho nên project không dùng Swagger/OpenAPI; “Remote API” mà 
 app gọi là Firebase Realtime Database REST API (theo pattern /products.json, /orders/...json, /profiles.json),
@@ -122,7 +122,7 @@ Sau đó sort theo date giảm dần.
 PATCH ${DATABASE_URL}/orders/${userId}/${orderId}.json?auth=${token}
 Body JSON: { status: newStatus }
 
-Toàn bộ dữ liệu thêm sản phẩm và người dùng đều ở trong Firebase Realtime Data của Google:
+## Toàn bộ dữ liệu thêm sản phẩm và người dùng đều ở trong Firebase Realtime Data của Google:
 <img width="1916" height="1080" alt="2026-05-12 21_55_26-" src="https://github.com/user-attachments/assets/360592ff-df06-44d0-864c-604c15b0d729" />
 <img width="1920" height="1080" alt="2026-05-12 21_55_50-" src="https://github.com/user-attachments/assets/d46425bc-0061-4c96-ad79-455eb0040392" />
 
